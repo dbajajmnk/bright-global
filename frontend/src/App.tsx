@@ -6,11 +6,14 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Tour from './pages/Tour';
 import Contact from './pages/Contact';
+import Vision from './pages/Vision';
+import Team from './pages/Team';
+import NursingCourse from './pages/NursingCourse';
+import Placement from './pages/Placement';
+import Visa from './pages/Visa';
 
 const App = () => {
   console.log("✅ Custom App.tsx is active");
-  <h1 className="text-4xl text-red-500">Tailwind Test</h1>
-
 
   return (
     <Layout>
@@ -20,6 +23,11 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/tour" element={<Tour />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/vision" element={<Vision />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/nursing-course" element={<NursingCourse />} />
+        <Route path="/placement" element={<Placement />} />
+        <Route path="/visa" element={<Visa />} />
       </Routes>
     </Layout>
   );
