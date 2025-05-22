@@ -7,9 +7,9 @@ const Visa = () => (
       We provide end-to-end visa processing and relocation support for our students. Unlike standard visa consultants, we include visa services in our training package, ensuring a smooth transition to Europe with a valid job offer and EU certificate.
     </p>
     <ul className="list-disc text-lg text-textSecondary space-y-2 pl-6 mt-4">
-      <li>📋 Transparent documentation</li>
-      <li>🔐 Guaranteed legal work visa</li>
-      <li>💸 Save ₹10–15 Lakh typically spent on just work visas – get everything for ₹5 Lakh</li>
+      <li> Transparent documentation</li>
+      <li> Guaranteed legal work visa</li>
+      <li>  Save ₹10–15 Lakh typically spent on just work visas – get everything for ₹5 Lakh</li>
     </ul>
   </div>
 );

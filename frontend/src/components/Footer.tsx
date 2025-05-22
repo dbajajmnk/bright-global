@@ -12,7 +12,7 @@ const Footer = () => {
             href="mailto:info@brightglobal.co.in"
             className="hover:text-primary break-all"
           >
-            📧 info@brightglobal.co.in
+           Email at:  info@brightglobal.co.in
           </a>
           <a
             href="https://brightglobal.co.in"
@@ -20,7 +20,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="hover:text-primary break-all"
           >
-            🌐 brightglobal.co.in
+            Website: brightglobal.co.in
           </a>
         </div>
       </div>

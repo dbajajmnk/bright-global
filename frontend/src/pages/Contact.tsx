@@ -10,11 +10,11 @@ const Contact = () => {
           Feel free to reach out to us for registration, collaboration, or any queries.
         </p>
         <div className="space-y-2 text-lg text-textPrimary">
-          <p><strong>📍 Address:</strong> Dehradun, India</p>
-          <p><strong>📞 Phone:</strong> +91 98765 43210</p>
-          <p><strong>📧 Email:</strong> info@brightglobal.co.in</p>
-          <p><strong>🌐 Website:</strong> <a href="https://brightglobal.co.in" target="_blank" rel="noopener noreferrer" className="text-primary underline">brightglobal.co.in</a></p>
-          <p><strong>📸 Instagram:</strong> <a href="https://www.instagram.com/bright_overseas__" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary gap-1"><FaInstagram /> @bright_overseas__</a></p>
+          <p><strong> Address:</strong> Dehradun, India</p>
+          <p><strong> Phone:</strong> +91 98765 43210</p>
+          <p><strong> Email:</strong> info@brightglobal.co.in</p>
+          <p><strong> Website:</strong> <a href="https://brightglobal.co.in" target="_blank" rel="noopener noreferrer" className="text-primary underline">brightglobal.co.in</a></p>
+          <p><strong> Instagram:</strong> <a href="https://www.instagram.com/bright_overseas__" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary gap-1"><FaInstagram /> @bright_overseas__</a></p>
         </div>
       </div>
 

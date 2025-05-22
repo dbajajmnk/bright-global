@@ -7,9 +7,9 @@ const Placement = () => (
       Bright Global guarantees 100% job placement in Europe post-training, with legally assured work visas and EU-certified qualifications.
     </p>
     <ul className="list-disc text-lg text-textSecondary space-y-2 pl-6">
-      <li>✅ High Return on Investment – 3-month program to European job</li>
-      <li>✅ 100% legal, guaranteed work visa with documentation support</li>
-      <li>✅ Job assurance across top destinations like Greece, France, and the UK</li>
+      <li> High Return on Investment – 3-month program to European job</li>
+      <li> 100% legal, guaranteed work visa with documentation support</li>
+      <li> Job assurance across top destinations like Greece, France, and the UK</li>
     </ul>
   </div>
 );
