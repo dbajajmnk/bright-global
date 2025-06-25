@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#3DB8A9', // teal-like for contrast
-        secondary: '#F7941E', // orange accent
-        background: '#E6F7FA', // 🌤️ light sky blue background
-        surface: '#FFFFFF',
-        textPrimary: '#1F2937',
-        textSecondary: '#6B7280',
-        highlight: '#0EA5E9' // light blue
+        primary: '#F78B1F',       // 🔶 TechLambda orange
+        secondary: '#444444',     // 🔲 Dark gray for main text
+        background: '#FFFFFF',    // ⚪ White background
+        surface: '#F9FAFB',       // 🧾 Light surface/section BG
+        textPrimary: '#444444',   // 🖋️ Primary text color
+        textSecondary: '#999999', // 🪶 Light gray subtext
+        highlight: '#FBBF24',     // ✨ Optional yellow-ish highlight
       },
     },
   },

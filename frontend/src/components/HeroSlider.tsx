@@ -7,28 +7,28 @@ import "slick-carousel/slick/slick-theme.css";
 
 const images = [
   {
-    src: '/tour-images/tour1.jpg',
-    caption: 'Modern Training Infrastructure',
+    src: '/assets/1.jpg',
+    caption: 'Join Us Online',
     link: '/nursing-course',
   },
   {
-    src: '/tour-images/tour2.jpg',
-    caption: 'Expert Trainers & Hands-On Practice',
+    src: '/assets/2.jpg',
+    caption: 'Work Together',
     link: '/team',
   },
   {
-    src: '/tour-images/tour3.jpg',
-    caption: 'Visa Counseling & Career Guidance',
+    src: '/assets/3.jpg',
+    caption: 'Learn Online',
     link: '/visa',
   },
   {
-    src: '/tour-images/tour4.jpg',
-    caption: 'Europe Placement with Legal Work Visa',
+    src: '/assets/4.jpg',
+    caption: 'Mobile Development',
     link: '/placement',
   },
   {
-    src: '/tour-images/tour5.jpg',
-    caption: 'Bright Global – A Gateway to Europe',
+    src: '/assets/5.jpg',
+    caption: 'WebsiteDevelopment',
     link: '/contact',
   },
 ];

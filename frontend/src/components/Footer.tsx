@@ -2,25 +2,25 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 py-6 border-t mt-10">
+    <footer className="bg-surface py-6 border-t border-gray-200 mt-10">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-        <p className="text-sm text-gray-600 mb-2 md:mb-0">
-          © 2025 Bright Global. All rights reserved.
+        <p className="text-sm text-textSecondary mb-2 md:mb-0">
+          © 2025 TechLambda. All rights reserved.
         </p>
-        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-sm text-gray-600">
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-sm text-textSecondary">
           <a
-            href="mailto:info@brightglobal.co.in"
-            className="hover:text-primary break-all"
+            href="mailto:hr@techlambda.com"
+            className="hover:text-primary transition-colors break-all"
           >
-           Email at:  info@brightglobal.co.in
+            Email at: hr@techlambda.com
           </a>
           <a
-            href="https://brightglobal.co.in"
+            href="https://techlambda.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-primary break-all"
+            className="hover:text-primary transition-colors break-all"
           >
-            Website: brightglobal.co.in
+            Website: www.techlambda.com
           </a>
         </div>
       </div>

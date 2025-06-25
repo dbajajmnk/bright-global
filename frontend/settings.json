@@ -1,0 +1,11 @@
+{
+  "css.validate": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "css": "css"
+  },
+  "tailwindCSS.experimental.configFile": "D:/Global/bright-global-website/bright-global/frontend/tailwind.config.js"
+}
