@@ -110,7 +110,7 @@ const Header = () => {
             )}
           </div>
 
-          <Link to="/contact" className={isActive('/contact') ? 'text-primary font-semibold' : 'hover:text-primary'}>Contact</Link>
+          <Link to="/contact us" className={isActive('/contact') ? 'text-primary font-semibold' : 'hover:text-primary'}>Contact</Link>
         </nav>
 
         {/* Mobile Menu Toggle */}

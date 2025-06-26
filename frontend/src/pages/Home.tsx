@@ -19,7 +19,7 @@ const Home = () => {
           From innovative tech solutions to academic support, Techlambda is your go-to hub for everything digital, educational, and transformational.
         </p>
         <p className="text-base md:text-lg text-textSecondary mt-2 font-semibold">
-          🔧 Tech Services. 💡 Academic Support. ✅ All in One Place.
+          🔧 Tech Services.  Academic Support. All in One Place.
         </p>
       </div>
 
