@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaInstagram, FaYoutube, FaLinkedin, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import ContactForm from '../components/ContactForm'; // Make sure this file exists and path is correct
+console.log("Contact component is rendering");
+
 
 const Contact: React.FC = () => {
   return (

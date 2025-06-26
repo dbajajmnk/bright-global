@@ -2,33 +2,38 @@ import React from 'react';
 
 const teamMembers = [
   {
-    name: 'Anjali Verma',
-    role: 'Project Manager',
+    name: 'Deepika Bajaj',
+    role: 'Managing Director',
     image: 'https://via.placeholder.com/150',
   },
   {
-    name: 'Rahul Bansal',
-    role: 'Cloud Architect',
+    name: 'Sonika Agarwal',
+    role: 'Business Development Manager',
     image: 'https://via.placeholder.com/150',
   },
   {
-    name: 'Sneha Mehra',
-    role: 'Lead UI/UX Designer',
+    name: 'Anamika',
+    role: 'Marketing Manager',
     image: 'https://via.placeholder.com/150',
   },
   {
-    name: 'Amit Singh',
-    role: 'Senior Backend Developer',
+    name: 'Pulkit Khatter',
+    role: 'React.js, React Native, Android, Flutter, Python Developer & Tutor',
     image: 'https://via.placeholder.com/150',
   },
   {
-    name: 'Pooja Desai',
-    role: 'Academic Support Lead',
+    name: 'Kapil Gupta',
+    role: 'Backend Developer | Node.js, MERN Stack',
     image: 'https://via.placeholder.com/150',
   },
   {
-    name: 'Nikhil Sharma',
-    role: 'AI/ML Engineer',
+    name: 'Shiwani Baghel',
+    role: 'CSS, HTML, Python, Django, UI/UX | YouTube Content Creator',
+    image: 'https://via.placeholder.com/150',
+  },
+  {
+    name: 'Amritpal Singh',
+    role: 'Full-Stack Developer | Django, HTML, CSS, JavaScript, Python',
     image: 'https://via.placeholder.com/150',
   },
 ];
@@ -39,7 +44,8 @@ const Team = () => {
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-primary">Meet Our Team</h2>
         <p className="text-textSecondary mt-2 max-w-2xl mx-auto">
-          Our team combines expertise across technology and education to deliver solutions that are smart, scalable, and student-friendly. Get to know the people behind Techlambda's innovation.
+          Our team combines technical depth with a passion for learning and building. From full-stack developers to strategic minds in business and marketing,
+          we’re a united force behind TechLambda's success.
         </p>
       </div>
 
@@ -55,7 +61,7 @@ const Team = () => {
               className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
             />
             <h4 className="text-xl font-semibold text-primary">{member.name}</h4>
-            <p className="text-textSecondary">{member.role}</p>
+            <p className="text-textSecondary text-sm">{member.role}</p>
           </div>
         ))}
       </div>
