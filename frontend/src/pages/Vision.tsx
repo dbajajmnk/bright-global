@@ -1,49 +1,55 @@
 import React from 'react';
 
-const Vision = () => {
+const Vision: React.FC = () => {
   return (
     <section className="px-6 md:px-20 py-10 space-y-12">
       {/* Header */}
       <div className="text-center">
-        <h2 className="text-4xl font-bold text-primary mb-2">Our Vision & Mission</h2>
+        <h2 className="text-4xl font-bold text-primary mb-2">Our Vision</h2>
         <p className="text-lg text-textSecondary max-w-3xl mx-auto">
-          At Techlambda, we believe in driving positive change through technology and education. Our purpose is clear, and our passion is limitless.
+          At Techlambda, we envision a world where technology becomes second nature — empowering individuals and businesses to innovate fearlessly and grow boundlessly.
         </p>
       </div>
 
-      {/* Vision */}
+      {/* Vision Statement */}
       <div className="bg-surface p-6 rounded-lg shadow-md">
-        <h3 className="text-2xl font-semibold text-secondary mb-2">Our Vision</h3>
+        <h3 className="text-2xl font-semibold text-secondary mb-2">
+          Vision Statement – Techlambda Services Pvt. Ltd.
+        </h3>
         <p className="text-textSecondary text-lg">
-          To become a global leader in tech solutions and academic services — known for transforming ideas into impact, and clients into long-term partners.
+          Our mission is to simplify the digital journey — delivering concise, intelligent, and impactful solutions that empower people and organizations to thrive.
+          At Techlambda, we bridge the gap between technology and human need, offering tailored software, IT services, and academic support that are not only future-ready
+          but remarkably easy to adopt. With every project, we aim to make complexity disappear and possibilities expand.
         </p>
       </div>
 
-      {/* Mission */}
-      <div className="bg-surface p-6 rounded-lg shadow-md">
-        <h3 className="text-2xl font-semibold text-secondary mb-2">Our Mission</h3>
-        <p className="text-textSecondary text-lg">
-          To simplify technology and empower individuals and businesses through reliable, innovative, and future-ready digital solutions — from software development to student support.
-        </p>
-      </div>
-
-      {/* Values */}
+      {/* Core Values */}
       <div>
         <h3 className="text-2xl font-semibold text-secondary mb-4">Our Core Values</h3>
         <ul className="list-disc list-inside text-textSecondary space-y-2 text-lg">
-          <li><strong>Innovation:</strong> We build creative, cutting-edge solutions that solve real-world problems.</li>
-          <li><strong>Integrity:</strong> We operate with honesty, ethics, and transparency.</li>
-          <li><strong>Excellence:</strong> We never settle — we refine, improve, and deliver results that exceed expectations.</li>
-          <li><strong>Empowerment:</strong> We uplift businesses, students, and individuals with tools to succeed.</li>
-          <li><strong>Collaboration:</strong> We grow together — with our team, clients, and community.</li>
+          <li>
+            <strong>Clarity:</strong> We believe simplicity drives impact. We strip away the unnecessary to deliver what truly matters.
+          </li>
+          <li>
+            <strong>Innovation:</strong> We craft forward-thinking solutions that solve real problems with elegance and precision.
+          </li>
+          <li>
+            <strong>Integrity:</strong> We operate with honesty, transparency, and a deep respect for our clients and team.
+          </li>
+          <li>
+            <strong>Excellence:</strong> We pursue mastery in everything we do, delivering results that are clean, clear, and powerful.
+          </li>
+          <li>
+            <strong>Empowerment:</strong> We uplift our users by making technology accessible, intuitive, and effective.
+          </li>
         </ul>
       </div>
 
       {/* CTA */}
       <div className="text-center mt-10">
-        <h3 className="text-xl font-bold text-primary mb-2">Join Our Mission</h3>
+        <h3 className="text-xl font-bold text-primary mb-2">Grow With Our Vision</h3>
         <p className="text-textSecondary mb-4 max-w-xl mx-auto">
-          Be part of a future where technology and education change lives. Whether you're a student, entrepreneur, or partner — Techlambda is your ally.
+          Be part of our journey as we reimagine what's possible through clarity, innovation, and purpose-driven technology.
         </p>
         <a
           href="/contact"

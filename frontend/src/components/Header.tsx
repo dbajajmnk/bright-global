@@ -24,93 +24,73 @@ const Header = () => {
           <Link to="/" className={isActive('/') ? 'text-primary font-semibold' : 'hover:text-primary'}>Home</Link>
 
           {/* About Dropdown */}
-          <div
-            onMouseEnter={() => setAboutOpen(true)}
-            onMouseLeave={() => setAboutOpen(false)}
-            className="relative"
-          >
-            <span className="cursor-pointer hover:text-primary">About</span>
+          <div className="relative">
+            <button
+              onClick={() => {
+                setAboutOpen(prev => !prev);
+                setServicesOpen(false);
+                setCoursesOpen(false);
+              }}
+              className="cursor-pointer hover:text-primary font-medium"
+            >
+              About
+            </button>
             {aboutOpen && (
-              <div className="absolute top-full mt-2 bg-white shadow rounded p-2 space-y-2 z-10 w-56">
-                <Link to="/about" className="block px-4 py-2 hover:bg-gray-100 text-sm text-textPrimary">Overview</Link>
-                <Link to="/vision" className="block px-4 py-2 hover:bg-gray-100 text-sm text-textPrimary">Vision & Mission</Link>
-                <Link to="/team" className="block px-4 py-2 hover:bg-gray-100 text-sm text-textPrimary">Our Team</Link>
-                <Link to="/expert-apply" className="block px-4 py-2 hover:bg-gray-100 text-sm text-textPrimary">Apply as Expert</Link>
+              <div className="absolute top-full mt-2 bg-white shadow-lg rounded-lg p-3 space-y-2 z-20 w-64">
+                <Link to="/about" className="block px-4 py-2 rounded hover:bg-gray-100 text-sm text-textPrimary">Overview</Link>
+                <Link to="/vision" className="block px-4 py-2 rounded hover:bg-gray-100 text-sm text-textPrimary">Vision</Link>
+                <Link to="/mission" className="block px-4 py-2 rounded hover:bg-gray-100 text-sm text-textPrimary">Mission</Link>
+                <Link to="/team" className="block px-4 py-2 rounded hover:bg-gray-100 text-sm text-textPrimary">Our Team</Link>
+                <Link to="/expert-apply" className="block px-4 py-2 rounded hover:bg-gray-100 text-sm text-textPrimary">Apply as Expert</Link>
               </div>
             )}
           </div>
 
           {/* Services Dropdown */}
-          <div
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
-            className="relative"
-          >
-            <span className="cursor-pointer hover:text-primary">Services</span>
+          <div className="relative">
+            <button
+              onClick={() => {
+                setServicesOpen(prev => !prev);
+                setAboutOpen(false);
+                setCoursesOpen(false);
+              }}
+              className="cursor-pointer hover:text-primary font-medium"
+            >
+              Services
+            </button>
             {servicesOpen && (
-              <div className="absolute top-full mt-2 bg-white shadow rounded p-2 space-y-2 z-10 w-72">
-                {[
-                  ['software-development', 'Custom Software Development'],
-                  ['web-app-development', 'Web & Mobile App Development'],
-                  ['ui-ux', 'UI/UX Design'],
-                  ['cloud-devops', 'Cloud & DevOps Solutions'],
-                  ['ai-ml', 'AI, ML & Automation'],
-                  ['cybersecurity', 'Cybersecurity & Compliance'],
-                  ['it-consulting', 'IT Consulting & Support'],
-                  ['assignments', 'Academic Projects & Assignments'],
-                  ['tutoring', 'Live Tutoring & Doubt Solving'],
-                  ['final-year-projects', 'Final Year Project Guidance']
-                ].map(([path, name]) => (
-                  <Link key={path} to={`/services/${path}`} className="block px-4 py-2 hover:bg-gray-100 text-sm text-textPrimary">{name}</Link>
+              <div className="absolute top-full mt-2 bg-white shadow-lg rounded-lg p-3 space-y-2 z-20 w-72">
+                {[['software-development', 'Custom Software Development'], ['web-app-development', 'Web & Mobile App Development'], ['ui-ux', 'UI/UX Design'], ['cloud-devops', 'Cloud & DevOps Solutions'], ['ai-ml', 'AI, ML & Automation'], ['cybersecurity', 'Cybersecurity & Compliance'], ['it-consulting', 'IT Consulting & Support'], ['assignments', 'Academic Projects & Assignments'], ['tutoring', 'Live Tutoring & Doubt Solving'], ['final-year-projects', 'Final Year Project Guidance']].map(([path, name]) => (
+                  <Link key={path} to={`/services/${path}`} className="block px-4 py-2 rounded hover:bg-gray-100 text-sm text-textPrimary">{name}</Link>
                 ))}
               </div>
             )}
           </div>
 
-          {/* Courses Offered Dropdown */}
-          <div
-            onMouseEnter={() => setCoursesOpen(true)}
-            onMouseLeave={() => setCoursesOpen(false)}
-            className="relative"
-          >
-            <span className="cursor-pointer hover:text-primary">Courses Offered</span>
+          {/* Courses Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => {
+                setCoursesOpen(prev => !prev);
+                setAboutOpen(false);
+                setServicesOpen(false);
+              }}
+              className="cursor-pointer hover:text-primary font-medium"
+            >
+              Courses Offered
+            </button>
             {coursesOpen && (
-              <div className="absolute top-full mt-2 bg-white shadow rounded p-2 space-y-2 z-10 w-72 max-h-96 overflow-y-auto">
-                {[
-                  ['azure', 'Azure (Beginner to Expert)'],
-                  ['test-automation', 'Test Automation Frameworks'],
-                  ['angular', 'Angular Development'],
-                  ['web-design', 'Web & Graphic Design'],
-                  ['front-end', 'HTML, CSS & JavaScript'],
-                  ['selenium-java', 'Selenium with Java'],
-                  ['powerbi', 'Power BI Dashboards'],
-                  ['react', 'React.js Development'],
-                  ['csharp-selenium', 'C# with Selenium'],
-                  ['springboot-rest', 'Spring Boot & REST APIs'],
-                  ['data-science', 'Data Science with Python & Tableau'],
-                  ['game-dev', 'Game Development'],
-                  ['mern-stack', 'MERN Stack (Node, Express, MongoDB)'],
-                  ['aws-devops', 'AWS & DevOps'],
-                  ['ml-opencv', 'ML, DL & OpenCV in Python'],
-                  ['android', 'Android App Development'],
-                  ['dotnet-api', 'ASP.NET Core Web API'],
-                  ['flutter', 'Flutter App Development'],
-                  ['security', 'Cybersecurity & Cloud Security'],
-                  ['java-fullstack', 'Full Stack Java Development']
-                ].map(([path, name]) => (
-                  <Link
-                    key={path}
-                    to={`/course/${path}`}
-                    className="block px-4 py-2 hover:bg-gray-100 text-sm text-textPrimary"
-                  >
-                    {name}
-                  </Link>
+              <div className="absolute top-full mt-2 bg-white shadow-lg rounded-lg p-3 space-y-2 z-20 w-72 max-h-96 overflow-y-auto">
+                {[['azure', 'Azure (Beginner to Expert)'], ['test-automation', 'Test Automation Frameworks'], ['angular', 'Angular Development'], ['web-design', 'Web & Graphic Design'], ['front-end', 'HTML, CSS & JavaScript'], ['selenium-java', 'Selenium with Java'], ['powerbi', 'Power BI Dashboards'], ['react', 'React.js Development'], ['csharp-selenium', 'C# with Selenium'], ['springboot-rest', 'Spring Boot & REST APIs'], ['data-science', 'Data Science with Python & Tableau'], ['game-dev', 'Game Development'], ['mern-stack', 'MERN Stack (Node, Express, MongoDB)'], ['aws-devops', 'AWS & DevOps'], ['ml-opencv', 'ML, DL & OpenCV in Python'], ['android', 'Android App Development'], ['dotnet-api', 'ASP.NET Core Web API'], ['flutter', 'Flutter App Development'], ['security', 'Cybersecurity & Cloud Security'], ['java-fullstack', 'Full Stack Java Development']].map(([path, name]) => (
+                  <Link key={path} to={`/course/${path}`} className="block px-4 py-2 rounded hover:bg-gray-100 text-sm text-textPrimary">{name}</Link>
                 ))}
               </div>
             )}
           </div>
 
-          <Link to="/contact" className={isActive('/contact') ? 'text-primary font-semibold' : 'hover:text-primary'}>Contact</Link>
+          <Link to="/contact" className={isActive('/contact') ? 'text-primary font-semibold' : 'hover:text-primary'}>
+            Contact
+          </Link>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -134,52 +114,21 @@ const Header = () => {
         <nav className="flex flex-col space-y-4 p-4 text-textPrimary overflow-y-auto h-full pb-20">
           <Link to="/" onClick={() => setMobileOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setMobileOpen(false)}>Overview</Link>
-          <Link to="/vision" onClick={() => setMobileOpen(false)}>Vision & Mission</Link>
+          <Link to="/vision" onClick={() => setMobileOpen(false)}>Vision</Link>
+          <Link to="/mission" onClick={() => setMobileOpen(false)}>Mission</Link>
           <Link to="/team" onClick={() => setMobileOpen(false)}>Our Team</Link>
           <Link to="/expert-apply" onClick={() => setMobileOpen(false)}>Apply as Expert</Link>
           <Link to="/contact" onClick={() => setMobileOpen(false)}>Contact</Link>
 
           <hr />
           <span className="font-semibold">Services</span>
-          {[
-            ['software-development', 'Custom Software Development'],
-            ['web-app-development', 'Web & Mobile App Development'],
-            ['ui-ux', 'UI/UX Design'],
-            ['cloud-devops', 'Cloud & DevOps Solutions'],
-            ['ai-ml', 'AI, ML & Automation'],
-            ['cybersecurity', 'Cybersecurity & Compliance'],
-            ['it-consulting', 'IT Consulting & Support'],
-            ['assignments', 'Academic Projects & Assignments'],
-            ['tutoring', 'Live Tutoring & Doubt Solving'],
-            ['final-year-projects', 'Final Year Project Guidance']
-          ].map(([path, name]) => (
+          {[['software-development', 'Custom Software Development'], ['web-app-development', 'Web & Mobile App Development'], ['ui-ux', 'UI/UX Design'], ['cloud-devops', 'Cloud & DevOps Solutions'], ['ai-ml', 'AI, ML & Automation'], ['cybersecurity', 'Cybersecurity & Compliance'], ['it-consulting', 'IT Consulting & Support'], ['assignments', 'Academic Projects & Assignments'], ['tutoring', 'Live Tutoring & Doubt Solving'], ['final-year-projects', 'Final Year Project Guidance']].map(([path, name]) => (
             <Link key={path} to={`/services/${path}`} onClick={() => setMobileOpen(false)}>{name}</Link>
           ))}
 
           <hr />
           <span className="font-semibold">Courses</span>
-          {[
-            ['azure', 'Azure'],
-            ['test-automation', 'Test Automation'],
-            ['angular', 'Angular'],
-            ['web-design', 'Web & Graphic Design'],
-            ['front-end', 'HTML, CSS & JS'],
-            ['selenium-java', 'Selenium Java'],
-            ['powerbi', 'Power BI'],
-            ['react', 'React.js'],
-            ['csharp-selenium', 'C# Selenium'],
-            ['springboot-rest', 'Spring Boot'],
-            ['data-science', 'Data Science'],
-            ['game-dev', 'Game Development'],
-            ['mern-stack', 'MERN Stack'],
-            ['aws-devops', 'AWS DevOps'],
-            ['ml-opencv', 'ML, DL, OpenCV'],
-            ['android', 'Android Dev'],
-            ['dotnet-api', 'ASP.NET Core'],
-            ['flutter', 'Flutter'],
-            ['security', 'Cybersecurity'],
-            ['java-fullstack', 'Full Stack Java']
-          ].map(([path, name]) => (
+          {[['azure', 'Azure'], ['test-automation', 'Test Automation'], ['angular', 'Angular'], ['web-design', 'Web & Graphic Design'], ['front-end', 'HTML, CSS & JS'], ['selenium-java', 'Selenium Java'], ['powerbi', 'Power BI'], ['react', 'React.js'], ['csharp-selenium', 'C# Selenium'], ['springboot-rest', 'Spring Boot'], ['data-science', 'Data Science'], ['game-dev', 'Game Dev'], ['mern-stack', 'MERN Stack'], ['aws-devops', 'AWS DevOps'], ['ml-opencv', 'ML & OpenCV'], ['android', 'Android'], ['dotnet-api', 'ASP.NET Core'], ['flutter', 'Flutter'], ['security', 'Cybersecurity'], ['java-fullstack', 'Full Stack Java']].map(([path, name]) => (
             <Link key={path} to={`/course/${path}`} onClick={() => setMobileOpen(false)}>{name}</Link>
           ))}
         </nav>
