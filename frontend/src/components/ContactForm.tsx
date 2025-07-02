@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 const ContactForm: React.FC = () => {
-  const [state, handleSubmit] = useForm("xdkzproo");
+  const [state, handleSubmit] = useForm("amrit");
 
   if (state.succeeded) {
     return <p className="text-green-600 font-semibold">✅ Thanks for contacting us!</p>;
@@ -34,7 +34,7 @@ const ContactForm: React.FC = () => {
       </div>
 
       <button type="submit" disabled={state.submitting} className="bg-blue-600 text-white px-4 py-2 rounded">
-        {state.submitting ? 'Submitting...' : 'Submit'}
+        {state.submitting ? 'Submitting...' : 'Submit'} 
       </button>
     </form>
   );

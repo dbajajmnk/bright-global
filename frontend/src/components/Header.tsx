@@ -16,7 +16,7 @@ const Header = () => {
     <header className="bg-white shadow sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/">
-          <img src={logo} alt="TechLambda Logo" className="h-10 w-auto object-contain" />
+          <img src={logo} alt="TechLambda Logo" className=" h-12  w-auto object-contain" />
         </Link>
 
         {/* Desktop Navigation */}
