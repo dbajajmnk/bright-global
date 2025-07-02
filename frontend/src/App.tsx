@@ -10,10 +10,7 @@ import Contact from './pages/Contact';
 import Mission from './pages/Mission';
 import Team from './pages/Team';
 import Vision from './pages/Vision';
-
-
 import ExpertApplicationPage from './pages/ExpertApplicationPage';
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import FaqPage from './components/FaqPage';
@@ -40,9 +37,7 @@ const App: React.FC = () => {
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/share-story" element={<ShareAStoryPage />} />
-
-        
-  <Route path="/blog/cybersecurity" element={<CybersecurityBlog />} />
+<Route path="/blog/cybersecurity" element={<CybersecurityBlog />} />
 
           </Routes>
         </main>
